@@ -66,7 +66,7 @@ export default class App extends React.Component {
         <Grid>
           <div>{mainView}</div>
         </Grid>
-        <FooterBar />
+        {/* <FooterBar /> */}
       </div>
     );
   }
