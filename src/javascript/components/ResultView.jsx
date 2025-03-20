@@ -77,7 +77,7 @@ export default class ResultView extends React.Component {
         <textarea
           rows="45"
           cols="150"
-          className="bg-white"
+          className="bg-white text-black"
           value={text}
           onChange={this.handleChange.bind(this)}
         />
