@@ -34,8 +34,9 @@ module.exports = {
         },
       },
       {
+        // 在 module.rules 中找到处理 CSS 的部分，确保包含 postcss-loader
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.png$/,

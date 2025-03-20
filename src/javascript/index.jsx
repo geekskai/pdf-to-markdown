@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import 'bootstrap/dist/css/bootstrap.css';
-import '../css/styles.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+import "../css/styles.css";
 
-import App from './components/App.jsx';
-import AppState from './models/AppState.jsx';
+import App from "./components/App.jsx";
+import AppState from "./models/AppState.jsx";
 
 function render(appState) {
-    ReactDOM.render(<App appState={ appState } />, document.getElementById('main'));
+  ReactDOM.render(<App appState={appState} />, document.getElementById("main"));
 }
 
 const appState = new AppState({
-    renderFunction: render,
+  renderFunction: render,
 });
 
-appState.render()
+appState.render();
